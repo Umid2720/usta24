@@ -28,19 +28,35 @@
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">Usta<span>24</span></a>
-                <ul class="nav-links">
-                    <li><a href="#home" data-i18n="nav-home">Asosiy</a></li>
-                    <li><a href="#services" data-i18n="nav-services">Xizmatlar</a></li>
-                    <li><a href="#features" data-i18n="nav-features">Nega Biz?</a></li>
-                    <li><a href="#contact" data-i18n="nav-contact">Aloqa</a></li>
-                </ul>
+                <div class="nav-links-container">
+                    <div class="mobile-menu-header mobile-only">
+                        <a href="#" class="logo">Usta<span>24</span></a>
+                        <button class="mobile-close">&times;</button>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#home" data-i18n="nav-home">Asosiy</a></li>
+                        <li><a href="#services" data-i18n="nav-services">Xizmatlar</a></li>
+                        <li><a href="#features" data-i18n="nav-features">Nega Biz?</a></li>
+                        <li><a href="#contact" data-i18n="nav-contact">Aloqa</a></li>
+                    </ul>
+                    <div class="mobile-menu-footer mobile-only">
+                        <a href="tel:+998917254111" class="phone-link">+998 91 725-41-11</a>
+                    </div>
+                </div>
                 <div class="nav-cta">
                     <div class="lang-switcher">
                         <button class="lang-btn active" data-lang="uz">UZ</button>
                         <button class="lang-btn" data-lang="ru">RU</button>
                     </div>
-                    <a href="tel:+998917254111" class="phone-link">+998 91 725-41-11</a>
-                    <a href="https://t.me/shoxrux_atayev" target="_blank" class="btn btn-primary" data-i18n="call-btn">Chaqirish</a>
+                    <a href="tel:+998917254111" class="phone-link desktop-only">+998 91 725-41-11</a>
+                    <a href="https://t.me/shoxrux_atayev" target="_blank" class="btn btn-primary desktop-only"
+                        data-i18n="call-btn">Chaqirish</a>
+
+                    <div class="hamburger mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -50,20 +66,20 @@
         <section id="home" class="hero">
             <div class="container hero-container">
                 <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                    <h1>Santexnik va Elektrik xizmatlari</h1>
+                    <h1 data-i18n="hero-title">Santexnik va Elektrik xizmatlari</h1>
                     <ul class="hero-benefits">
-                        <li>☑️ Urganch bo'ylab bepul chaqiruv</li>
-                        <li>☑️ 30 daqiqa ichida yetib boramiz</li>
-                        <li>☑️ Shartnoma asosida ishlaymiz</li>
-                        <li>☑️ 1 yil kafolat beramiz</li>
+                        <li data-i18n="hero-b1">☑️ Urganch bo\'ylab bepul chaqiruv</li>
+                        <li data-i18n="hero-b2">☑️ 30 daqiqa ichida yetib boramiz</li>
+                        <li data-i18n="hero-b3">☑️ Shartnoma asosida ishlaymiz</li>
+                        <li data-i18n="hero-b4">☑️ 1 yil kafolat beramiz</li>
                     </ul>
-                    <p class="hero-offer">Hoziroq ustalarga buyurtma bering va barcha xizmatlar uchun <span
-                            class="highlight-yellow">15% chegirmaga</span> ega bo'ling!</p>
+                    <p class="hero-offer" data-i18n="hero-offer">Hoziroq ustalarga buyurtma bering va barcha xizmatlar
+                        uchun <span class="highlight-yellow">15% chegirmaga</span> ega bo'ling!</p>
                     <div class="hero-buttons">
-                        <a href="tel:+998917254111" class="btn btn-primary btn-large"
-                            style="text-transform: uppercase;">Usta chaqirish</a>
+                        <a href="tel:+998917254111" class="btn btn-primary btn-large" style="text-transform: uppercase;"
+                            data-i18n="hero-btn1">Usta chaqirish</a>
                         <a href="https://t.me/shoxrux_atayev" target="_blank" class="btn btn-outline btn-large"
-                            style="text-transform: uppercase;">Telegramdan yozish 24/7</a>
+                            style="text-transform: uppercase;" data-i18n="hero-btn2">Telegramdan yozish 24/7</a>
                     </div>
                 </div>
             </div>
@@ -72,14 +88,14 @@
         <section id="services" class="services">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
-                    <h2>Bizning <span class="highlight">Xizmatlar</span></h2>
-                    <p>Santexnika va elektrik bo'yicha barcha professional xizmatlar</p>
+                    <h2 data-i18n="serv-title">Bizning <span class="highlight">Xizmatlar</span></h2>
+                    <p data-i18n="serv-desc">Santexnika va elektrik bo\'yicha barcha professional xizmatlar</p>
                 </div>
 
                 <!-- Tabs -->
                 <div class="services-tabs" data-aos="fade-up">
-                    <button class="tab-btn active" data-tab="santexnika">SANTEXNIK</button>
-                    <button class="tab-btn" data-tab="elektrik">ELEKTRIK</button>
+                    <button class="tab-btn active" data-tab="santexnika" data-i18n="tab-santex">SANTEXNIK</button>
+                    <button class="tab-btn" data-tab="elektrik" data-i18n="tab-elek">ELEKTRIK</button>
                 </div>
 
                 <!-- Santexnika -->
@@ -89,60 +105,60 @@
                             <img loading="lazy" src="images/SANTEX3_1.jpg.webp" alt="Tiqilishlarni bartaraf qilish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>TIQILISHLARNI BARTARAF QILISH</h3>
-                                <p class="service-price"><span>150 000</span> dan boshlab</p>
+                                <h3 data-i18n="s1-title">TIQILISHLARNI BARTARAF QILISH</h3>
+                                <p class="service-price" data-i18n="price-from"><span>150 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="150">
                             <img loading="lazy" src="images/SANTEXNIK_4_1.jpg.webp" alt="Santexnika o'rnatish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>SANTEXNIKA O'RNATISH</h3>
-                                <p class="service-price"><span>150 000</span> dan boshlab</p>
+                                <h3 data-i18n="s2-title">SANTEXNIKA O\'RNATISH</h3>
+                                <p class="service-price" data-i18n="price-from"><span>150 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                             <img loading="lazy" src="images/SANTEX4_1.jpg.webp" alt="Oqishlarni bartaraf etish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>OQISHLARNI BARTARAF ETISH</h3>
-                                <p class="service-price"><span>150 000</span> dan boshlab</p>
+                                <h3 data-i18n="s3-title">OQISHLARNI BARTARAF ETISH</h3>
+                                <p class="service-price" data-i18n="price-from"><span>150 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                             <img loading="lazy" src="images/SANTEX6_1.jpg.webp" alt="Unitaz o'rnatish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>UNITAZ O'RNATISH</h3>
-                                <p class="service-price"><span>150 000</span> dan boshlab</p>
+                                <h3 data-i18n="s4-title">UNITAZ O\'RNATISH</h3>
+                                <p class="service-price" data-i18n="price-from"><span>150 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="150">
                             <img loading="lazy" src="images/SANTEXNIK1_1.jpg.webp" alt="Katyol o'rnatish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>KATYOL O'RNATISH</h3>
-                                <p class="service-price"><span>150 000</span> dan boshlab</p>
+                                <h3 data-i18n="s5-title">KATYOL O\'RNATISH</h3>
+                                <p class="service-price" data-i18n="price-from"><span>150 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                             <img loading="lazy" src="images/SANTEX5_1.jpg.webp" alt="Kanalizatsiya tozalash"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>KANALIZATSIYA TOZALASH</h3>
-                                <p class="service-price"><span>150 000</span> dan boshlab</p>
+                                <h3 data-i18n="s6-title">KANALIZATSIYA TOZALASH</h3>
+                                <p class="service-price" data-i18n="price-from"><span>150 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                     </div>
@@ -155,60 +171,60 @@
                             <img loading="lazy" src="images/ai-generated-8810296.jpg.webp"
                                 alt="Rozetkalarni almashtirish" class="service-img">
                             <div class="service-card-body">
-                                <h3>ROZETKALARNI ALMASHTIRISH</h3>
-                                <p class="service-price"><span>100 000</span> dan boshlab</p>
+                                <h3 data-i18n="e1-title">ROZETKALARNI ALMASHTIRISH</h3>
+                                <p class="service-price" data-i18n="price-from-e"><span>100 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="150">
                             <img loading="lazy" src="images/electrician-1065718_.jpg.webp" alt="Qandilni o'rnatish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>QANDILNI O'RNATISH</h3>
-                                <p class="service-price"><span>100 000</span> dan boshlab</p>
+                                <h3 data-i18n="e2-title">QANDILNI O\'RNATISH</h3>
+                                <p class="service-price" data-i18n="price-from-e"><span>100 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                             <img loading="lazy" src="images/noroot.png.webp" alt="Hisoblagich almashtirish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>HISOBLAGICH ALMASHTIRISH</h3>
-                                <p class="service-price"><span>100 000</span> dan boshlab</p>
+                                <h3 data-i18n="e3-title">HISOBLAGICH ALMASHTIRISH</h3>
+                                <p class="service-price" data-i18n="price-from-e"><span>100 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                             <img loading="lazy" src="images/electrician-1080586_.jpg.webp" alt="Chiroqni o'rnatish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>CHIROQNI O'RNATISH</h3>
-                                <p class="service-price"><span>100 000</span> dan boshlab</p>
+                                <h3 data-i18n="e4-title">CHIROQNI O\'RNATISH</h3>
+                                <p class="service-price" data-i18n="price-from-e"><span>100 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="150">
                             <img loading="lazy" src="images/electrician-2755683_.jpg.webp" alt="Avtomatni almashtirish"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>AVTOMATNI ALMASHTIRISH</h3>
-                                <p class="service-price"><span>100 000</span> dan boshlab</p>
+                                <h3 data-i18n="e5-title">AVTOMATNI ALMASHTIRISH</h3>
+                                <p class="service-price" data-i18n="price-from-e"><span>100 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                             <img loading="lazy" src="images/ustyaqandil.png" alt="Qandilni o'rnatish/demontaj"
                                 class="service-img">
                             <div class="service-card-body">
-                                <h3>QANDILNI O'RNATISH/DEMONTAJ QILISH</h3>
-                                <p class="service-price"><span>100 000</span> dan boshlab</p>
+                                <h3 data-i18n="e6-title">QANDILNI O\'RNATISH/DEMONTAJ QILISH</h3>
+                                <p class="service-price" data-i18n="price-from-e"><span>100 000</span> dan boshlab</p>
                                 <a href="https://t.me/shoxrux_atayev" target="_blank"
-                                    class="btn btn-primary service-btn">Usta chaqirish</a>
+                                    class="btn btn-primary service-btn" data-i18n="hero-btn1">Usta chaqirish</a>
                             </div>
                         </div>
                     </div>
@@ -219,16 +235,18 @@
         <section id="about" class="about-company">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
-                    <h2 style="text-transform: uppercase;">KOMPANIYA HAQIDA</h2>
-                    <p>Bizning kompaniya haqida quyidagi ma'lumotlardan bilib olishingiz mumkin.</p>
+                    <h2 style="text-transform: uppercase;" data-i18n="about-title">KOMPANIYA HAQIDA</h2>
+                    <p data-i18n="about-desc">Bizning kompaniya haqida quyidagi ma\'lumotlardan bilib olishingiz mumkin.
+                    </p>
                 </div>
                 <div class="about-grid">
                     <div class="about-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="about-card-left">
                             <div class="about-number">1</div>
                             <div class="about-text">
-                                <h3>5+ YIL</h3>
-                                <p>Barcha santexnik va elektriklar eng kamida 5 yil tajribaga ega.</p>
+                                <h3 data-i18n="a1-title">5+ YIL</h3>
+                                <p data-i18n="a1-desc">Barcha santexnik va elektriklar eng kamida 5 yil tajribaga ega.
+                                </p>
                             </div>
                         </div>
                         <div class="about-card-right">
@@ -240,8 +258,8 @@
                         <div class="about-card-left">
                             <div class="about-number">2</div>
                             <div class="about-text">
-                                <h3>100+</h3>
-                                <p>Hamkor ustalarga egamiz.</p>
+                                <h3 data-i18n="a2-title">100+</h3>
+                                <p data-i18n="a2-desc">Hamkor ustalarga egamiz.</p>
                             </div>
                         </div>
                         <div class="about-card-right">
@@ -253,8 +271,9 @@
                         <div class="about-card-left">
                             <div class="about-number">3</div>
                             <div class="about-text">
-                                <h3>30 daqiqa</h3>
-                                <p>90% holatlarda 30 daqiqa ichida aytilgan manzilga yetib boramiz.</p>
+                                <h3 data-i18n="a3-title">30 daqiqa</h3>
+                                <p data-i18n="a3-desc">90% holatlarda 30 daqiqa ichida aytilgan manzilga yetib boramiz.
+                                </p>
                             </div>
                         </div>
                         <div class="about-card-right">
@@ -266,8 +285,8 @@
                         <div class="about-card-left">
                             <div class="about-number">4</div>
                             <div class="about-text">
-                                <h3>Garantiya</h3>
-                                <p>Biz bajargan ishimizga 1 yil kafolat beramiz.</p>
+                                <h3 data-i18n="a4-title">Garantiya</h3>
+                                <p data-i18n="a4-desc">Biz bajargan ishimizga 1 yil kafolat beramiz.</p>
                             </div>
                         </div>
                         <div class="about-card-right">
@@ -279,8 +298,8 @@
                         <div class="about-card-left">
                             <div class="about-number">5</div>
                             <div class="about-text">
-                                <h3>200+ ta</h3>
-                                <p>Har oy 100 dan oshiq ishimizdan rozi mijozlar.</p>
+                                <h3 data-i18n="a5-title">200+ ta</h3>
+                                <p data-i18n="a5-desc">Har oy 100 dan oshiq ishimizdan rozi mijozlar.</p>
                             </div>
                         </div>
                         <div class="about-card-right">
@@ -292,8 +311,8 @@
                         <div class="about-card-left">
                             <div class="about-number">6</div>
                             <div class="about-text">
-                                <h3>0 so'm</h3>
-                                <p>Buyurtma bajarilgan bo'lsa yo'l haqqi olinmaydi.</p>
+                                <h3 data-i18n="a6-title">0 so\'m</h3>
+                                <p data-i18n="a6-desc">Buyurtma bajarilgan bo\'lsa yo\'l haqqi olinmaydi.</p>
                             </div>
                         </div>
                         <div class="about-card-right">
@@ -308,28 +327,30 @@
             <div class="container">
                 <div class="features-wrapper">
                     <div class="features-content" data-aos="fade-right">
-                        <h2>Nega aynan <span class="highlight">bizni</span> tanlashadi?</h2>
-                        <p>Biz mijozlarimizga faqat eng yaxshi xizmatni taqdim etishga intilamiz.</p>
+                        <h2 data-i18n="f-title">Nega aynan <span class="highlight">bizni</span> tanlashadi?</h2>
+                        <p data-i18n="f-desc">Biz mijozlarimizga faqat eng yaxshi xizmatni taqdim etishga intilamiz.</p>
                         <ul class="features-list">
                             <li data-aos="fade-up" data-aos-delay="100">
                                 <div class="feature-icon">⏱️</div>
                                 <div>
-                                    <h4>Tezkor yetib borish</h4>
-                                    <p>Buyurtma tushgandan so'ng 30 daqiqa ichida yetib boramiz.</p>
+                                    <h4 data-i18n="f1-title">Tezkor yetib borish</h4>
+                                    <p data-i18n="f1-desc">Buyurtma tushgandan so\'ng 30 daqiqa ichida yetib boramiz.
+                                    </p>
                                 </div>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="200">
                                 <div class="feature-icon">🛡️</div>
                                 <div>
-                                    <h4>Sifat kafolati</h4>
-                                    <p>Barcha qilingan ishlarga 1 yillik rasmiy kafolat beramiz.</p>
+                                    <h4 data-i18n="f2-title">Sifat kafolati</h4>
+                                    <p data-i18n="f2-desc">Barcha qilingan ishlarga 1 yillik rasmiy kafolat beramiz.</p>
                                 </div>
                             </li>
                             <li data-aos="fade-up" data-aos-delay="300">
                                 <div class="feature-icon">💰</div>
                                 <div>
-                                    <h4>Arzon narxlar</h4>
-                                    <p>Yashirin to'lovlarsiz, oldindan kelishilgan hamyonbop narxlar.</p>
+                                    <h4 data-i18n="f3-title">Arzon narxlar</h4>
+                                    <p data-i18n="f3-desc">Yashirin to\'lovlarsiz, oldindan kelishilgan hamyonbop
+                                        narxlar.</p>
                                 </div>
                             </li>
                         </ul>
@@ -354,21 +375,27 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
                                 <div class="testimonial-header">
-                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Madina Aliyeva" class="testimonial-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Madina Aliyeva"
+                                        class="testimonial-avatar">
                                     <div class="testimonial-info">
-                                        <span class="testimonial-badge" data-i18n="badge"><i class="fa-solid fa-check"></i> TASDIQLANGAN</span>
+                                        <span class="testimonial-badge" data-i18n="badge"><i
+                                                class="fa-solid fa-check"></i> TASDIQLANGAN</span>
                                         <h4 class="testimonial-name">Madina Aliyeva</h4>
                                         <span class="testimonial-location" data-i18n="loc-toshkent">Toshkent</span>
                                         <div class="testimonial-stars">
-                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial-quote-icon">
                                     <i class="fa-solid fa-quote-right"></i>
                                 </div>
-                                <h5 class="testimonial-title" data-i18n="t1-title">'Natija kutilganidan a\'lo bo\'ldi!'</h5>
-                                <p class="testimonial-text" data-i18n="t1-desc">Santexnika bo\'yicha yordam oldim. Natija kutilganidan a\'lo bo\'ldi. Jamoa professional ekan.</p>
+                                <h5 class="testimonial-title" data-i18n="t1-title">'Natija kutilganidan a\'lo bo\'ldi!'
+                                </h5>
+                                <p class="testimonial-text" data-i18n="t1-desc">Santexnika bo\'yicha yordam oldim.
+                                    Natija kutilganidan a\'lo bo\'ldi. Jamoa professional ekan.</p>
                             </div>
                         </div>
 
@@ -376,13 +403,17 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
                                 <div class="testimonial-header">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Olim Karimov" class="testimonial-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Olim Karimov"
+                                        class="testimonial-avatar">
                                     <div class="testimonial-info">
-                                        <span class="testimonial-badge" data-i18n="badge"><i class="fa-solid fa-check"></i> TASDIQLANGAN</span>
+                                        <span class="testimonial-badge" data-i18n="badge"><i
+                                                class="fa-solid fa-check"></i> TASDIQLANGAN</span>
                                         <h4 class="testimonial-name">Olim Karimov</h4>
                                         <span class="testimonial-location" data-i18n="loc-samarqand">Samarqand</span>
                                         <div class="testimonial-stars">
-                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -390,7 +421,8 @@
                                     <i class="fa-solid fa-quote-right"></i>
                                 </div>
                                 <h5 class="testimonial-title" data-i18n="t2-title">'Biznesim uchun katta yordam...'</h5>
-                                <p class="testimonial-text" data-i18n="t2-desc">Elektrik tarmoqlarini yangilashni joriy qildik. Endi xavfsizlikni nazorat qilish oson.</p>
+                                <p class="testimonial-text" data-i18n="t2-desc">Elektrik tarmoqlarini yangilashni joriy
+                                    qildik. Endi xavfsizlikni nazorat qilish oson.</p>
                             </div>
                         </div>
 
@@ -398,13 +430,17 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
                                 <div class="testimonial-header">
-                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Nigora Olimova" class="testimonial-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Nigora Olimova"
+                                        class="testimonial-avatar">
                                     <div class="testimonial-info">
-                                        <span class="testimonial-badge" data-i18n="badge"><i class="fa-solid fa-check"></i> TASDIQLANGAN</span>
+                                        <span class="testimonial-badge" data-i18n="badge"><i
+                                                class="fa-solid fa-check"></i> TASDIQLANGAN</span>
                                         <h4 class="testimonial-name">Nigora Olimova</h4>
                                         <span class="testimonial-location" data-i18n="loc-fargona">Farg\'ona</span>
                                         <div class="testimonial-stars">
-                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star-half-stroke"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -412,7 +448,8 @@
                                     <i class="fa-solid fa-quote-right"></i>
                                 </div>
                                 <h5 class="testimonial-title" data-i18n="t3-title">'Muloqot juda yoqimli!'</h5>
-                                <p class="testimonial-text" data-i18n="t3-desc">Ta\'mirlash borasida hamkorlik qildik. Men xohlagandek bo\'ldi. Ba\'zi o\'zgarishlar tezda amalga oshirildi.</p>
+                                <p class="testimonial-text" data-i18n="t3-desc">Ta\'mirlash borasida hamkorlik qildik.
+                                    Men xohlagandek bo\'ldi. Ba\'zi o\'zgarishlar tezda amalga oshirildi.</p>
                             </div>
                         </div>
 
@@ -420,13 +457,17 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
                                 <div class="testimonial-header">
-                                    <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Sanjar Tursunov" class="testimonial-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Sanjar Tursunov"
+                                        class="testimonial-avatar">
                                     <div class="testimonial-info">
-                                        <span class="testimonial-badge" data-i18n="badge"><i class="fa-solid fa-check"></i> TASDIQLANGAN</span>
+                                        <span class="testimonial-badge" data-i18n="badge"><i
+                                                class="fa-solid fa-check"></i> TASDIQLANGAN</span>
                                         <h4 class="testimonial-name">Sanjar Tursunov</h4>
                                         <span class="testimonial-location" data-i18n="loc-urganch">Urganch</span>
                                         <div class="testimonial-stars">
-                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -434,7 +475,8 @@
                                     <i class="fa-solid fa-quote-right"></i>
                                 </div>
                                 <h5 class="testimonial-title" data-i18n="t4-title">'Narxlari hamyonbop!'</h5>
-                                <p class="testimonial-text" data-i18n="t4-desc">Boshqa ustalarga qaraganda narxlari ancha yaxshi. Eng muhimi ishi sifatli va kafolatli. Barchaga tavsiya qilaman.</p>
+                                <p class="testimonial-text" data-i18n="t4-desc">Boshqa ustalarga qaraganda narxlari
+                                    ancha yaxshi. Eng muhimi ishi sifatli va kafolatli. Barchaga tavsiya qilaman.</p>
                             </div>
                         </div>
 
@@ -442,21 +484,26 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="500">
                                 <div class="testimonial-header">
-                                    <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Dilnoza Rahmatova" class="testimonial-avatar">
+                                    <img src="male_avatar.png" alt="Bobur Yusupov" class="testimonial-avatar">
                                     <div class="testimonial-info">
-                                        <span class="testimonial-badge" data-i18n="badge"><i class="fa-solid fa-check"></i> TASDIQLANGAN</span>
-                                        <h4 class="testimonial-name">Dilnoza Rahmatova</h4>
+                                        <span class="testimonial-badge" data-i18n="badge"><i
+                                                class="fa-solid fa-check"></i> TASDIQLANGAN</span>
+                                        <h4 class="testimonial-name">Bobur Yusupov</h4>
                                         <span class="testimonial-location" data-i18n="loc-xorazm">Xorazm</span>
                                         <div class="testimonial-stars">
-                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                class="fa-solid fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial-quote-icon">
                                     <i class="fa-solid fa-quote-right"></i>
                                 </div>
-                                <h5 class="testimonial-title" data-i18n="t5-title">'Kechasi ham kelib yordam berishdi.'</h5>
-                                <p class="testimonial-text" data-i18n="t5-desc">Suv quvuri yorilganda tunda qo\'ng\'iroq qildik, yarim soatda yetib kelishdi. Ularning tezkorligidan juda minnatdormiz!</p>
+                                <h5 class="testimonial-title" data-i18n="t5-title">'Kechasi ham kelib yordam berishdi.'
+                                </h5>
+                                <p class="testimonial-text" data-i18n="t5-desc">Suv quvuri yorilganda tunda qo\'ng\'iroq
+                                    qildik, yarim soatda yetib kelishdi. Ularning tezkorligidan juda minnatdormiz!</p>
                             </div>
                         </div>
                     </div>
@@ -468,50 +515,55 @@
         <section id="contact" class="cta-section" data-aos="fade-up">
             <div class="container cta-container">
                 <div class="cta-text">
-                    <h2>Uyingizda muammo bormi?</h2>
-                    <p>Hoziroq bizga qo'ng'iroq qiling va muammoni professionallarga topshiring.</p>
+                    <h2 data-i18n="cta-title">Uyingizda muammo bormi?</h2>
+                    <p data-i18n="cta-desc">Hoziroq bizga qo\'ng\'iroq qiling va muammoni professionallarga topshiring.
+                    </p>
                 </div>
                 <div class="cta-action">
                     <a href="tel:+998917254111" class="btn btn-primary btn-large btn-glow">📞 +998 91 725-41-11</a>
-                    <p class="cta-subtext">24 soat dam olish kunlarisiz</p>
+                    <p class="cta-subtext" data-i18n="cta-sub">24 soat dam olish kunlarisiz</p>
                     <a href="https://t.me/shoxrux_atayev" target="_blank" class="btn btn-outline"
-                        style="margin-top: 15px; display: inline-block;">Telegram orqali bog'lanish</a>
+                        style="margin-top: 15px; display: inline-block;" data-i18n="cta-tg">Telegram orqali
+                        bog\'lanish</a>
                 </div>
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-col">
                 <a href="#" class="logo">Usta<span>24</span></a>
-                <p>Urganch shahridagi ishonchli santexnika va elektrik xizmatlari ko'rsatuvchi kompaniya.</p>
+                <p data-i18n="ft-desc">Urganch shahridagi ishonchli santexnika va elektrik xizmatlari ko\'rsatuvchi
+                    kompaniya.</p>
             </div>
             <div class="footer-col">
-                <h3>Havolalar</h3>
+                <h3 data-i18n="ft-links">Havolalar</h3>
                 <ul>
-                    <li><a href="#home">Asosiy</a></li>
-                    <li><a href="#services">Xizmatlar</a></li>
-                    <li><a href="#features">Afzalliklar</a></li>
+                    <li><a href="#home" data-i18n="nav-home">Asosiy</a></li>
+                    <li><a href="#services" data-i18n="nav-services">Xizmatlar</a></li>
+                    <li><a href="#features" data-i18n="ft-adv">Afzalliklar</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h3>Aloqa</h3>
+                <h3 data-i18n="ft-contact">Aloqa</h3>
                 <ul>
-                    <li>Urganch sh.</li>
-                    <li>Tel: +998 91 725-41-11</li>
-                    <li>Telegram: @shoxrux_atayev</li>
+                    <li>
+                        <a href="tel:+998917254111" target="_blank">+998 91 725-41-11</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/shoxrux_atayev" target="_blank">Telegram: @shoxrux_atayev</a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Usta24. Barcha huquqlar himoyalangan.</p>
+            <p data-i18n="ft-copy">&copy; 2026 Usta24. Barcha huquqlar himoyalangan.</p>
         </div>
     </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <!-- Translations -->
     <script src="translations.js"></script>
 
@@ -549,13 +601,13 @@
         // Language Switcher Logic
         if (typeof translations !== 'undefined') {
             const langBtns = document.querySelectorAll('.lang-btn');
-            
+
             function setLanguage(lang) {
                 localStorage.setItem('lang', lang);
                 document.documentElement.lang = lang;
-                
+
                 langBtns.forEach(btn => {
-                    if(btn.dataset.lang === lang) {
+                    if (btn.dataset.lang === lang) {
                         btn.classList.add('active');
                     } else {
                         btn.classList.remove('active');
@@ -564,8 +616,8 @@
 
                 document.querySelectorAll('[data-i18n]').forEach(el => {
                     const key = el.getAttribute('data-i18n');
-                    if(translations[lang][key]) {
-                        if(el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    if (translations[lang][key]) {
+                        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
                             el.placeholder = translations[lang][key];
                         } else {
                             el.innerHTML = translations[lang][key];
@@ -595,6 +647,53 @@
                 btn.classList.add('active');
                 document.getElementById(btn.dataset.tab).classList.add('active');
             });
+        });
+
+        // Active Nav Link Logic (Scrollspy)
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.navbar .nav-links a');
+
+        function activeLinkScroll() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', activeLinkScroll);
+        // Call it once on load
+        activeLinkScroll();
+
+        // Mobile Menu Logic
+        const hamburger = document.querySelector('.hamburger');
+        const mobileClose = document.querySelector('.mobile-close');
+        const navContainer = document.querySelector('.nav-links-container');
+        const mobileNavLinks = document.querySelectorAll('.nav-links-container .nav-links a');
+
+        function openMenu() {
+            navContainer.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            navContainer.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', openMenu);
+        mobileClose.addEventListener('click', closeMenu);
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
         });
     </script>
 </body>
