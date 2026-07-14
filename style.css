@@ -219,7 +219,7 @@ h4 {
 /* Hero Section */
 .hero {
     padding: 180px 0 100px;
-    background: url('images/cover.webp') center/cover no-repeat;
+    background: url('images/header_image.jpg') center/cover no-repeat;
     position: relative;
     overflow: hidden;
     color: var(--white);
@@ -1064,6 +1064,7 @@ h4 {
 
     .hero {
         padding: 120px 0 60px;
+        background-position: right 20px;
     }
 
     .hero h1 {
