@@ -60,8 +60,20 @@ h4 {
     color: var(--primary);
 }
 
-.section-title-uppercase {
-    text-transform: uppercase;
+.highlight-yellow {
+    color: #f59e0b;
+    font-weight: 700;
+}
+
+/* Counter animation */
+.counter {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 700;
+    transition: color 0.3s;
+}
+.counter--animating {
+    color: var(--primary-dark);
 }
 
 /* Header & Navigation */
@@ -717,67 +729,244 @@ h4 {
     font-weight: 600;
 }
 
-/* CTA Section */
+/* ===== CTA Section — Premium Redesign ===== */
 .cta-section {
-    padding: 80px 0;
-    background: var(--primary);
+    position: relative;
+    padding: 100px 0 80px;
+    background: linear-gradient(135deg, #0a0f2e 0%, #1a1f5e 40%, #0d1b4b 100%);
     color: var(--white);
     text-align: center;
+    overflow: hidden;
+}
+
+/* Decorative floating circles */
+.cta-bg-decor {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.cta-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.12;
+    animation: floatCircle 6s ease-in-out infinite;
+}
+
+.cta-circle-1 {
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, #3b82f6, transparent);
+    top: -120px;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.cta-circle-2 {
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, #6366f1, transparent);
+    bottom: -80px;
+    right: -80px;
+    animation-delay: 2s;
+}
+
+.cta-circle-3 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #22d3ee, transparent);
+    top: 40%;
+    left: 55%;
+    animation-delay: 4s;
+}
+
+@keyframes floatCircle {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-20px) scale(1.05); }
 }
 
 .cta-container {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+}
+
+/* Eyebrow badge */
+.cta-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(99, 102, 241, 0.25);
+    border: 1px solid rgba(99, 102, 241, 0.5);
+    color: #a5b4fc;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 50px;
+    backdrop-filter: blur(8px);
+    margin-bottom: 8px;
 }
 
 .cta-text h2 {
     color: var(--white);
-    font-size: 40px;
-    margin-bottom: 16px;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.2;
 }
 
 .cta-text p {
-    font-size: 20px;
-    opacity: 0.9;
-    margin-bottom: 40px;
+    font-size: 18px;
+    opacity: 0.75;
+    margin: 0;
+    max-width: 520px;
+    line-height: 1.6;
 }
 
-.btn-glow {
-    background: var(--accent);
-    color: var(--secondary);
-    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
-    animation: pulse 2s infinite;
+/* Cards grid */
+.cta-cards-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.btn-glow:hover {
-    background: #d97706;
-    color: var(--white);
-    transform: scale(1.05);
+/* Individual contact card */
+.cta-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    min-width: 260px;
+    max-width: 300px;
+    flex: 1;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
 }
 
-.cta-telegram-link {
-    display: inline-block;
-    margin-top: 15px;
+.cta-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(99, 102, 241, 0.45);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(99, 102, 241, 0.12);
 }
 
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 15px rgba(245, 158, 11, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
-    }
+/* Avatar icon circle */
+.cta-card-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.45);
+    flex-shrink: 0;
 }
 
+.cta-card-avatar--female {
+    background: linear-gradient(135deg, #ec4899, #f43f5e);
+    box-shadow: 0 8px 24px rgba(244, 63, 94, 0.45);
+}
+
+/* Card info text */
+.cta-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.cta-card-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.cta-card-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.cta-card-number {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Card action buttons */
+.cta-card-actions {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.cta-btn-phone,
+.cta-btn-telegram {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 11px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+.cta-btn-phone {
+    background: white;
+    color: #1a1f5e;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.12);
+}
+
+.cta-btn-phone:hover {
+    background: #dbeafe;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+.cta-btn-telegram {
+    background: rgba(0, 136, 204, 0.25);
+    color: #7dd3fc;
+    border: 1px solid rgba(0, 136, 204, 0.4);
+}
+
+.cta-btn-telegram:hover {
+    background: rgba(0, 136, 204, 0.45);
+    color: white;
+    border-color: #0088cc;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 136, 204, 0.3);
+}
+
+/* Subtext */
 .cta-subtext {
-    margin-top: 16px;
-    opacity: 0.8;
+    font-size: 14px;
+    opacity: 0.5;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
 }
 
 /* Footer */

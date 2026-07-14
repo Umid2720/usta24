@@ -5,7 +5,7 @@ const translations = {
         "nav-features": "Nega Biz?",
         "nav-contact": "Aloqa",
         "call-btn": "Chaqirish",
-        
+
         "hero-title": "Urganchda Santexnik va Elektrik xizmatlari",
         "hero-b1": "☑️ Urganch bo'ylab bepul chaqiruv",
         "hero-b2": "☑️ 30 daqiqa ichida yetib boramiz",
@@ -14,12 +14,12 @@ const translations = {
         "hero-offer": "Hoziroq ustalarga buyurtma bering va barcha xizmatlar uchun <span class=\"highlight-yellow\">15% chegirmaga</span> ega bo'ling!",
         "hero-btn1": "Usta chaqirish",
         "hero-btn2": "Telegramdan yozish 24/7",
-        
+
         "serv-title": "Bizning <span class=\"highlight\">Xizmatlar</span>",
         "serv-desc": "Santexnika va elektrik bo'yicha barcha professional xizmatlar",
         "tab-santex": "SANTEXNIK",
         "tab-elek": "ELEKTRIK",
-        
+
         "s1-title": "TIQILISHLARNI BARTARAF QILISH",
         "s2-title": "SANTEXNIKA O'RNATISH",
         "s3-title": "OQISHLARNI BARTARAF ETISH",
@@ -32,7 +32,7 @@ const translations = {
         "s4-desc": "Urganchda unitaz o'rnatish, almashtirish va ulash ishlarini bajarish.",
         "s5-desc": "Urganchda katyol o'rnatish va isitish tizimini sozlash.",
         "s6-desc": "Urganchda kanalizatsiya tozalash va noxush hid muammosini bartaraf etish.",
-        
+
         "e1-title": "ROZETKALARNI ALMASHTIRISH",
         "e2-title": "QANDILNI O'RNATISH",
         "e3-title": "HISOBLAGICH ALMASHTIRISH",
@@ -45,10 +45,10 @@ const translations = {
         "e4-desc": "Urganch shahrida chiroq o'rnatish va yoritish nuqtalarini sozlash.",
         "e5-desc": "Urganchda avtomat almashtirish va elektr tarmog'ini himoyalash.",
         "e6-desc": "Elektrik Urganch xizmati: qandilni demontaj qilish va qayta o'rnatish.",
-        
+
         "price-from": "<span>150 000</span> dan boshlab",
         "price-from-e": "<span>100 000</span> dan boshlab",
-        
+
         "about-title": "KOMPANIYA HAQIDA",
         "about-desc": "Bizning kompaniya haqida quyidagi ma'lumotlardan bilib olishingiz mumkin.",
         "a1-title": "5+ YIL",
@@ -63,7 +63,7 @@ const translations = {
         "a5-desc": "Har oy 100 dan oshiq ishimizdan rozi mijozlar.",
         "a6-title": "0 so'm",
         "a6-desc": "Buyurtma bajarilgan bo'lsa yo'l haqqi olinmaydi.",
-        
+
         "f-title": "Nega aynan <span class=\"highlight\">bizni</span> tanlashadi?",
         "f-desc": "Biz mijozlarimizga faqat eng yaxshi xizmatni taqdim etishga intilamiz.",
         "f1-title": "Tezkor yetib borish",
@@ -72,7 +72,7 @@ const translations = {
         "f2-desc": "Barcha qilingan ishlarga 1 yillik rasmiy kafolat beramiz.",
         "f3-title": "Arzon narxlar",
         "f3-desc": "Yashirin to'lovlarsiz, oldindan kelishilgan hamyonbop narxlar.",
-        
+
         "t-title": "Mijozlarimizning <span class=\"highlight\">fikrlari</span>",
         "t-desc": "Bizning xizmatlarimizdan foydalangan mijozlarimizning samimiy fikrlari",
         "badge": "<i class=\"fa-solid fa-check\"></i> TASDIQLANGAN",
@@ -80,13 +80,13 @@ const translations = {
         "local-p1": "Usta24 Urganch shahrida uy va ofislar uchun tezkor santexnik xizmatlarini ko'rsatadi. Quvur tiqilishi, suv oqishi, unitaz yoki kran o'rnatish kerak bo'lsa, santexnik Urganch bo'yicha mahalliy ustalarimiz manzilga tez yetib boradi.",
         "local-p2": "Elektrik Urganch xizmatimiz rozetka, avtomat, hisoblagich, chiroq va qandillarni xavfsiz o'rnatish hamda almashtirishga ixtisoslashgan. Ish boshlanishidan oldin narx kelishiladi, bajarilgan ishga esa kafolat beriladi.",
         "local-p3": "Urganch shahrida ishonchli usta izlayotgan mijozlar bizni 24/7 aloqa, tezkor chaqiruv va tushunarli narxlar uchun tanlaydi. Muammo kichik bo'ladimi yoki shoshilinch bo'ladimi, Usta24 jamoasi yordamga tayyor.",
-        
-        "loc-toshkent": "TOSHKENT",
-        "loc-samarqand": "SAMARQAND",
-        "loc-fargona": "FARG'ONA",
-        "loc-urganch": "URGANCH",
-        "loc-xorazm": "XORAZM",
-        
+
+        "loc-xonqa": "Xonqa",
+        "loc-bogot": "Bog'ot",
+        "loc-xiva": "Xiva",
+        "loc-urganch": "Urganch",
+        "loc-urgancht": "Urganch tumani",
+
         "t1-title": "'Natija kutilganidan a'lo bo'ldi!'",
         "t1-desc": "Santexnika bo'yicha yordam oldim. Natija kutilganidan a'lo bo'ldi. Jamoa professional ekan.",
         "t2-title": "'Biznesim uchun katta yordam...'",
@@ -97,12 +97,20 @@ const translations = {
         "t4-desc": "Boshqa ustalarga qaraganda narxlari ancha yaxshi. Eng muhimi ishi sifatli va kafolatli. Barchaga tavsiya qilaman.",
         "t5-title": "'Kechasi ham kelib yordam berishdi.'",
         "t5-desc": "Suv quvuri yorilganda tunda qo'ng'iroq qildik, yarim soatda yetib kelishdi. Ularning tezkorligidan juda minnatdormiz!",
-        
+        "t6-title": "'Ustalar dim madaniyatli akan.'",
+        "t6-desc": "Usta24 jamoasina katta rahmat! Elektr bilan bog'liq muammoni dim tez va sifatli hal qilib bardilar. Vindan tashqari ustalar dim madaniyatli akan.",
+        "t7-title": "'Bahosi dim shikolant!'",
+        "t7-desc": "Santexnik chaqirvadim, Xivaga 30 minutda galdilar. Bahosi dim shikolant, ishlari vindanam zo'r. Tavsiya qilaman!",
+        "t8-title": "'Uyimiz marazennik bo'ldi.'",
+        "t8-desc": "Konditsionerimni tozalab bardilar, indi uyimiz marazennik bo'ldi. Ishlarina, muomilasina gap yo'q, dim sifatli ishlari, tavsiya qilaman.",
+
         "cta-title": "Uyingizda muammo bormi?",
         "cta-desc": "Hoziroq bizga qo'ng'iroq qiling va muammoni professionallarga topshiring.",
         "cta-sub": "24 soat dam olish kunlarisiz",
         "cta-tg": "Telegram orqali bog'lanish",
-        
+        "cta-tg-1": "Shoxruh",
+        "cta-tg-2": "Xamro",
+
         "ft-desc": "Urganch shahridagi ishonchli santexnika va elektrik xizmatlari ko'rsatuvchi kompaniya.",
         "ft-links": "Havolalar",
         "ft-adv": "Afzalliklar",
@@ -115,7 +123,7 @@ const translations = {
         "nav-features": "Почему мы?",
         "nav-contact": "Контакты",
         "call-btn": "Вызвать",
-        
+
         "hero-title": "Сантехник и электрик в Ургенче",
         "hero-b1": "☑️ Бесплатный вызов по Ургенчу",
         "hero-b2": "☑️ Прибудем в течение 30 минут",
@@ -124,12 +132,12 @@ const translations = {
         "hero-offer": "Закажите мастеров прямо сейчас и получите <span class=\"highlight-yellow\">скидку 15%</span> на все услуги!",
         "hero-btn1": "Вызвать мастера",
         "hero-btn2": "Написать в Telegram 24/7",
-        
+
         "serv-title": "Наши <span class=\"highlight\">Услуги</span>",
         "serv-desc": "Все профессиональные услуги по сантехнике и электрике",
         "tab-santex": "САНТЕХНИКА",
         "tab-elek": "ЭЛЕКТРИКА",
-        
+
         "s1-title": "УСТРАНЕНИЕ ЗАСОРОВ",
         "s2-title": "УСТАНОВКА САНТЕХНИКИ",
         "s3-title": "УСТРАНЕНИЕ УТЕЧЕК",
@@ -142,7 +150,7 @@ const translations = {
         "s4-desc": "Устанавливаем, меняем и подключаем унитазы в Ургенче.",
         "s5-desc": "Устанавливаем котлы и настраиваем систему отопления в Ургенче.",
         "s6-desc": "Чистим канализацию и устраняем неприятные запахи в Ургенче.",
-        
+
         "e1-title": "ЗАМЕНА РОЗЕТОК",
         "e2-title": "УСТАНОВКА ЛЮСТРЫ",
         "e3-title": "ЗАМЕНА СЧЕТЧИКА",
@@ -155,10 +163,10 @@ const translations = {
         "e4-desc": "Устанавливаем светильники и настраиваем освещение в городе Ургенч.",
         "e5-desc": "Меняем автоматы и защищаем электрическую сеть в Ургенче.",
         "e6-desc": "Электрик в Ургенче: демонтаж и повторная установка люстры.",
-        
+
         "price-from": "от <span>150 000</span> сум",
         "price-from-e": "от <span>100 000</span> сум",
-        
+
         "about-title": "О КОМПАНИИ",
         "about-desc": "Вы можете узнать о нашей компании из следующей информации.",
         "a1-title": "5+ ЛЕТ",
@@ -173,7 +181,7 @@ const translations = {
         "a5-desc": "Более 100 довольных клиентов нашей работой каждый месяц.",
         "a6-title": "0 сум",
         "a6-desc": "При выполнении заказа плата за проезд не взимается.",
-        
+
         "f-title": "Почему выбирают <span class=\"highlight\">именно нас</span>?",
         "f-desc": "Мы стремимся предоставлять нашим клиентам только лучший сервис.",
         "f1-title": "Быстрое прибытие",
@@ -182,7 +190,7 @@ const translations = {
         "f2-desc": "Даем официальную гарантию 1 год на все выполненные работы.",
         "f3-title": "Доступные цены",
         "f3-desc": "Доступные цены, оговоренные заранее, без скрытых платежей.",
-        
+
         "t-title": "<span class=\"highlight\">Отзывы</span> наших клиентов",
         "t-desc": "Искренние отзывы наших клиентов, воспользовавшихся нашими услугами",
         "badge": "<i class=\"fa-solid fa-check\"></i> ПОДТВЕРЖДЕН",
@@ -190,13 +198,13 @@ const translations = {
         "local-p1": "Usta24 оказывает быстрые сантехнические услуги для домов и офисов в городе Ургенч. Если нужен сантехник в Ургенче для засора, протечки, установки унитаза или крана, местные мастера быстро приезжают по адресу.",
         "local-p2": "Наш электрик в Ургенче безопасно устанавливает и меняет розетки, автоматы, счетчики, светильники и люстры. Цена согласуется до начала работ, а на выполненную работу дается гарантия.",
         "local-p3": "Жители города Ургенч выбирают нас за связь 24/7, быстрый вызов и понятные цены. Небольшая проблема или срочный случай — команда Usta24 готова помочь.",
-        
-        "loc-toshkent": "ТАШКЕНТ",
-        "loc-samarqand": "САМАРКАНД",
-        "loc-fargona": "ФЕРГАНА",
-        "loc-urganch": "УРГЕНЧ",
-        "loc-xorazm": "ХОРЕЗМ",
-        
+
+        "loc-xonqa": "Ханка",
+        "loc-bogot": "Багат",
+        "loc-xiva": "Хива",
+        "loc-urganch": "Ургенч",
+        "loc-urgancht": "Ургенчский район",
+
         "t1-title": "'Результат превзошел ожидания!'",
         "t1-desc": "Получила помощь по сантехнике. Результат отличный. Команда профессионалов.",
         "t2-title": "'Большая помощь для моего бизнеса...'",
@@ -207,12 +215,20 @@ const translations = {
         "t4-desc": "Цены намного лучше по сравнению с другими мастерами. Главное, работа качественная и с гарантией. Рекомендую.",
         "t5-title": "'Помогли даже ночью.'",
         "t5-desc": "Когда прорвало трубу, мы позвонили ночью, приехали через полчаса. Очень благодарны за оперативность!",
-        
+        "t6-title": "'Мастера очень культурные.'",
+        "t6-desc": "Огромное спасибо команде Usta24! Проблему с электричеством решили очень быстро и качественно. Кроме того, мастера очень культурные.",
+        "t7-title": "'Цены очень приятные!'",
+        "t7-desc": "Вызвала сантехника, приехали в Хиву за 30 минут. Цены отличные, работа еще лучше. Рекомендую!",
+        "t8-title": "'Дом стал прохладным.'",
+        "t8-desc": "Почистили кондиционер, теперь дома как в холодильнике. Нет слов к работе и отношению, очень качественная работа, рекомендую.",
+
         "cta-title": "Проблема дома?",
         "cta-desc": "Позвоните нам прямо сейчас и доверьте проблему профессионалам.",
         "cta-sub": "24 часа без выходных",
         "cta-tg": "Связаться через Telegram",
-        
+        "cta-tg-1": "Шохрух",
+        "cta-tg-2": "Хамро",
+
         "ft-desc": "Надежная компания по оказанию сантехнических и электромонтажных услуг в городе Ургенч.",
         "ft-links": "Ссылки",
         "ft-adv": "Преимущества",
