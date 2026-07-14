@@ -207,7 +207,7 @@ h4 {
 /* Hero Section */
 .hero {
     padding: 180px 0 100px;
-    background: url('images/cover.png') center/cover no-repeat;
+    background: url('images/cover.webp') center/cover no-repeat;
     position: relative;
     overflow: hidden;
     color: var(--white);
@@ -388,6 +388,14 @@ h4 {
     margin-bottom: 12px;
     line-height: 1.4;
     text-transform: uppercase;
+}
+
+.service-desc {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 18px;
+    min-height: 44px;
 }
 
 .service-price {
@@ -1016,6 +1024,82 @@ h4 {
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.local-seo {
+    padding: 96px 0;
+    background: var(--white);
+}
+
+.local-seo .section-header {
+    margin-bottom: 32px;
+}
+
+.local-seo-content {
+    max-width: 880px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+    color: var(--text-main);
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.route-page {
+    background: var(--bg-light);
+}
+
+.route-main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 32px 16px;
+}
+
+.route-hero,
+.route-content {
+    width: min(100%, 880px);
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.route-hero {
+    padding: clamp(32px, 6vw, 64px);
+    display: grid;
+    gap: 18px;
+}
+
+.route-hero h1 {
+    font-size: clamp(34px, 6vw, 56px);
+    line-height: 1.08;
+    color: var(--text-main);
+}
+
+.route-hero p,
+.route-content p {
+    max-width: 720px;
+    color: var(--text-light);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.route-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.route-content {
+    padding: clamp(24px, 4vw, 40px);
+    margin-top: 18px;
+}
+
+.route-content h2 {
+    margin-bottom: 12px;
+    color: var(--text-main);
 }
 
 .testimonial-info {
