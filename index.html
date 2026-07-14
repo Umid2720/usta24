@@ -28,19 +28,69 @@
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">Usta<span>24</span></a>
-                <div class="nav-links-container">
-                    <div class="mobile-menu-header mobile-only">
-                        <a href="#" class="logo">Usta<span>24</span></a>
-                        <button class="mobile-close">&times;</button>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="#home" data-i18n="nav-home">Asosiy</a></li>
-                        <li><a href="#services" data-i18n="nav-services">Xizmatlar</a></li>
-                        <li><a href="#features" data-i18n="nav-features">Nega Biz?</a></li>
-                        <li><a href="#contact" data-i18n="nav-contact">Aloqa</a></li>
-                    </ul>
-                    <div class="mobile-menu-footer mobile-only">
-                        <a href="tel:+998917254111" class="phone-link">+998 91 725-41-11</a>
+                <div class="nav-links-container" id="mobile-menu">
+                    <div class="mobile-menu-panel">
+                        <div class="mobile-menu-header mobile-only">
+                            <a href="#" class="logo">Usta<span>24</span></a>
+                            <button type="button" class="mobile-close" aria-label="Menyuni yopish">
+                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <ul class="nav-links">
+                            <li>
+                                <a href="#home">
+                                    <i class="fa-solid fa-house nav-link-icon" aria-hidden="true"></i>
+                                    <span data-i18n="nav-home">Asosiy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services">
+                                    <i class="fa-solid fa-screwdriver-wrench nav-link-icon" aria-hidden="true"></i>
+                                    <span data-i18n="nav-services">Xizmatlar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#features">
+                                    <i class="fa-solid fa-star nav-link-icon" aria-hidden="true"></i>
+                                    <span data-i18n="nav-features">Nega Biz?</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    <i class="fa-solid fa-phone nav-link-icon" aria-hidden="true"></i>
+                                    <span data-i18n="nav-contact">Aloqa</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mobile-menu-footer mobile-only">
+                            <a href="tel:+998886110989" class="mobile-contact-link mobile-phone-link">
+                                <span class="mobile-contact-icon">
+                                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                                </span>
+                                <span class="mobile-contact-copy">
+                                    <strong>+998 88 611 09 89</strong>
+                                    <small>24/7</small>
+                                </span>
+                            </a>
+                            <a href="https://t.me/shoxrux_atayev" target="_blank" rel="noopener"
+                                class="mobile-contact-link mobile-social-link">
+                                <span class="mobile-contact-icon telegram-icon">
+                                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                                </span>
+                                <span class="mobile-contact-copy">
+                                    <strong>Telegram</strong>
+                                </span>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                                class="mobile-contact-link mobile-social-link">
+                                <span class="mobile-contact-icon instagram-icon">
+                                    <i class="fa-solid fa-camera" aria-hidden="true"></i>
+                                </span>
+                                <span class="mobile-contact-copy">
+                                    <strong>Instagram</strong>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="nav-cta">
@@ -49,14 +99,15 @@
                         <button class="lang-btn" data-lang="ru">RU</button>
                     </div>
                     <a href="tel:+998917254111" class="phone-link desktop-only">+998 91 725-41-11</a>
-                    <a href="https://t.me/shoxrux_atayev" target="_blank" class="btn btn-primary desktop-only"
-                        data-i18n="call-btn">Chaqirish</a>
+                    <a href="https://t.me/shoxrux_atayev" target="_blank" rel="noopener"
+                        class="btn btn-primary desktop-only" data-i18n="call-btn">Chaqirish</a>
 
-                    <div class="hamburger mobile-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <button type="button" class="hamburger mobile-toggle" aria-label="Menyuni ochish"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -529,6 +580,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-col">
@@ -548,13 +600,16 @@
                 <h3 data-i18n="ft-contact">Aloqa</h3>
                 <ul>
                     <li>
-                        <a href="tel:+998917254111" target="_blank">+998 91 725-41-11</a>
-                    </li>
-                    <li>
                         <a href="tel:+998886110989" target="_blank">+998 88 611-09-89</a>
                     </li>
                     <li>
+                        <a href="tel:+998917254111" target="_blank">+998 91 725-41-11</a>
+                    </li>
+                    <li>
                         <a href="https://t.me/shoxrux_atayev" target="_blank">Telegram: @shoxrux_atayev</a>
+                    </li>
+                    <li>
+                        <a href="tg://resolve?phone=998886110989" target="_blank">Hamro</a>
                     </li>
                 </ul>
             </div>
@@ -572,6 +627,7 @@
 
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         AOS.init({
             duration: 800,
@@ -682,22 +738,90 @@
         const mobileClose = document.querySelector('.mobile-close');
         const navContainer = document.querySelector('.nav-links-container');
         const mobileNavLinks = document.querySelectorAll('.nav-links-container .nav-links a');
+        const mobileMenuQuery = window.matchMedia('(max-width: 768px)');
+
+        function syncMenuA11y() {
+            const isOpen = navContainer.classList.contains('open');
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+            hamburger.setAttribute('aria-label', isOpen ? 'Menyuni yopish' : 'Menyuni ochish');
+
+            if (mobileMenuQuery.matches) {
+                navContainer.setAttribute('aria-hidden', String(!isOpen));
+            } else {
+                navContainer.removeAttribute('aria-hidden');
+                navContainer.classList.remove('open');
+                document.body.style.overflow = '';
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.setAttribute('aria-label', 'Menyuni ochish');
+            }
+        }
 
         function openMenu() {
             navContainer.classList.add('open');
             document.body.style.overflow = 'hidden';
+            syncMenuA11y();
+            mobileClose.focus();
         }
 
-        function closeMenu() {
+        function closeMenu(returnFocus = true) {
             navContainer.classList.remove('open');
             document.body.style.overflow = '';
+            syncMenuA11y();
+
+            if (returnFocus) {
+                hamburger.focus();
+            }
         }
 
-        hamburger.addEventListener('click', openMenu);
-        mobileClose.addEventListener('click', closeMenu);
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', closeMenu);
+        hamburger.addEventListener('click', () => {
+            if (navContainer.classList.contains('open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
         });
+
+        mobileClose.addEventListener('click', () => closeMenu());
+
+        navContainer.addEventListener('click', event => {
+            if (event.target === navContainer) {
+                closeMenu();
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            const isOpen = navContainer.classList.contains('open');
+
+            if (event.key === 'Escape' && isOpen) {
+                closeMenu();
+            }
+
+            if (event.key === 'Tab' && isOpen) {
+                const focusableItems = navContainer.querySelectorAll('a[href], button:not([disabled])');
+                const firstItem = focusableItems[0];
+                const lastItem = focusableItems[focusableItems.length - 1];
+
+                if (event.shiftKey && document.activeElement === firstItem) {
+                    event.preventDefault();
+                    lastItem.focus();
+                } else if (!event.shiftKey && document.activeElement === lastItem) {
+                    event.preventDefault();
+                    firstItem.focus();
+                }
+            }
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => closeMenu(false));
+        });
+
+        if (mobileMenuQuery.addEventListener) {
+            mobileMenuQuery.addEventListener('change', syncMenuA11y);
+        } else {
+            mobileMenuQuery.addListener(syncMenuA11y);
+        }
+
+        syncMenuA11y();
     </script>
 </body>
 
