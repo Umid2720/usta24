@@ -219,7 +219,7 @@ h4 {
 /* Hero Section */
 .hero {
     padding: 180px 0 100px;
-    background: url('images/header_image.jpg') center/cover no-repeat;
+    background: url('images/header_image.webp') center/cover no-repeat;
     position: relative;
     overflow: hidden;
     color: var(--white);
@@ -1233,6 +1233,61 @@ h4 {
     color: var(--text-main);
     font-size: 17px;
     line-height: 1.75;
+}
+
+.faq {
+    padding: 96px 0;
+    background: var(--bg-light);
+}
+
+.faq-list {
+    width: min(100%, 880px);
+    margin: 0 auto;
+    display: grid;
+    gap: 14px;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 0 22px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    padding: 22px 34px 22px 0;
+    position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    font-size: 24px;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: '-';
+}
+
+.faq-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+    padding: 0 0 22px;
 }
 
 .route-page {
