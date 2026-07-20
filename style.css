@@ -2461,8 +2461,17 @@ h4 {
     .cta-card {
         width: min(100%, 360px);
         min-width: 0;
-        max-width: 360px;
+        max-width: 420px;
+        flex: 0 1 100%;
         padding: 26px 20px;
+    }
+
+    .cta-btn-phone,
+    .cta-btn-telegram {
+        min-width: 0;
+        white-space: nowrap;
+        overflow-wrap: normal;
+        word-break: normal;
     }
 
     .testimonial-card {
