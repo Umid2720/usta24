@@ -2,6 +2,8 @@ const translations = {
     uz: {
         "nav-home": "Asosiy",
         "nav-services": "Xizmatlar",
+        "nav-plumber": "Santexnik",
+        "nav-electrician": "Elektrik",
         "nav-features": "Nega Biz?",
         "nav-contact": "Aloqa",
         "call-btn": "Chaqirish",
@@ -131,6 +133,8 @@ const translations = {
     ru: {
         "nav-home": "Главная",
         "nav-services": "Услуги",
+        "nav-plumber": "Сантехник",
+        "nav-electrician": "Электрик",
         "nav-features": "Почему мы?",
         "nav-contact": "Контакты",
         "call-btn": "Вызвать",

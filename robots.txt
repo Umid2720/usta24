@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /*.py$
 
 Sitemap: https://usta24uz.netlify.app/sitemap.xml
