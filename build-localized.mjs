@@ -96,7 +96,7 @@ function buildRussianHome() {
   html = russianHomeSchema(html);
   html = replaceAllExact(html, [
     ['<html lang="uz">', '<html lang="ru">'],
-    ['href="style.css?v=20260720-2"', 'href="/style.css?v=20260720-2"'],
+    ['href="style.css?v=20260720-3"', 'href="/style.css?v=20260720-3"'],
     ['href="images/', 'href="/images/'],
     ['src="images/', 'src="/images/'],
     ['<title>Urganchda Santexnik va Elektrik 24/7 — Usta24</title>', '<title>Сантехник и Электрик в Ургенче 24/7 — Usta24</title>'],

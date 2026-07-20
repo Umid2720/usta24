@@ -1615,13 +1615,13 @@ h4 {
     padding: 76px 0;
     background:
         linear-gradient(120deg, rgba(37, 99, 235, 0.96), rgba(29, 78, 216, 0.94)),
-        url("images/header_image.webp") center / cover;
+        url("/images/header_image.webp") center / cover;
 }
 
 .detail-cta-electric {
     background:
         linear-gradient(120deg, rgba(15, 23, 42, 0.96), rgba(30, 64, 175, 0.92)),
-        url("images/header_image.webp") center / cover;
+        url("/images/header_image.webp") center / cover;
 }
 
 .detail-cta-inner {
@@ -2369,5 +2369,219 @@ h4 {
 
     .mobile-contact-copy small {
         font-size: 13px;
+    }
+}
+
+/* Responsive hardening for narrow phones, tablets and long Russian copy */
+@media (max-width: 768px) {
+    .container {
+        padding-inline: 16px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a,
+    button,
+    .cta-card-number,
+    .testimonial-badge {
+        overflow-wrap: anywhere;
+    }
+
+    .services,
+    .about-company,
+    .features,
+    .testimonials,
+    .local-seo {
+        padding-block: 64px;
+    }
+
+    .section-header {
+        margin-bottom: 34px;
+    }
+
+    .services-tabs {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .tab-btn {
+        min-width: 0;
+        flex: 1 1 0;
+        padding: 11px 12px;
+        font-size: 14px;
+    }
+
+    .service-card-body,
+    .about-card,
+    .features-list li {
+        padding: 20px 18px;
+    }
+
+    .about-card-left,
+    .features-list li {
+        min-width: 0;
+        gap: 14px;
+    }
+
+    .about-number {
+        width: 46px;
+        min-width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
+
+    .feature-icon {
+        min-width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .cta-section {
+        padding: 68px 0 56px;
+    }
+
+    .cta-container,
+    .cta-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-text h2 {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .cta-cards-grid {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .cta-card {
+        width: min(100%, 360px);
+        min-width: 0;
+        max-width: 360px;
+        padding: 26px 20px;
+    }
+
+    .testimonial-card {
+        padding: 24px 20px;
+    }
+
+    .testimonial-header {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .testimonial-avatar {
+        width: 56px;
+        height: 56px;
+        flex: 0 0 56px;
+    }
+
+    .local-seo-content {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .service-hero-grid,
+    .detail-two-column,
+    .detail-cta-inner,
+    .service-hero-copy,
+    .detail-callout {
+        min-width: 0;
+    }
+
+    .service-hero-copy h1 {
+        font-size: clamp(32px, 10vw, 42px);
+    }
+
+    .detail-cta-actions {
+        min-width: 0;
+    }
+
+    .footer-col,
+    .footer-col a {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        padding-inline: 12px;
+    }
+
+    .header {
+        padding-inline: 4px;
+    }
+
+    .navbar,
+    .detail-navbar {
+        gap: 8px;
+    }
+
+    .nav-cta,
+    .detail-header-actions {
+        gap: 6px;
+    }
+
+    .lang-switcher {
+        gap: 4px;
+        padding: 3px;
+    }
+
+    .lang-btn,
+    .detail-header-actions .lang-btn {
+        padding: 5px 9px;
+        font-size: 13px;
+    }
+
+    .hamburger {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero {
+        padding-top: 104px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero-benefits li,
+    .hero-offer {
+        font-size: 16px;
+    }
+
+    .hero-stats {
+        align-items: stretch;
+    }
+
+    .stat-item {
+        min-width: 0;
+    }
+
+    .cta-card-actions {
+        flex-direction: column;
+    }
+
+    .service-landing-hero {
+        padding-top: 34px;
+    }
+
+    .service-hero-copy h1 {
+        font-size: 30px;
+    }
+
+    .detail-callout,
+    .process-grid li {
+        padding: 22px 18px;
+    }
+
+    .mobile-menu-panel {
+        padding-inline: 14px;
     }
 }
